@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="navbar">
+    <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert T.Kiyosaki</h5>
+            <p>Rich Dad Poor Dad by Robert T. Kiyosaki is a personal finance book that teaches the importance of financial education and mindset. The author compares the lessons he learned from his two “dads” — his real father (Poor Dad), who valued job security and traditional education, and his friend’s father (Rich Dad), who focused on financial independence through investing and entrepreneurship. The book emphasizes building assets, understanding money management, and thinking differently about wealth. It encourages readers to work for knowledge, not just money, and to make money work for them smart investing habits.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>Atomic Habit</h2>
+            <h5>James</h5>
+            <p>Atomic Habits by James Clear is a powerful book that teaches how small, If you’re having trouble changing your habits, the problem isn’t you. The problem is your systemconsistent changes can lead to remarkable results. It explains that habits are the building blocks of success and that improving by just 1% every day can transform your life over time. The book focuses on four key principles: cue, craving, response, and reward, which together form the habit loop. Clear provides practical strategies for building good habits and breaking bad ones. Through real-life examples,  boost productivity, and create lasting , relationships, and career.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>Psychology of Money</h2>
+            <h5>Morgan Housel</h5>
+            <p>The Psychology of Money by Morgan Housel explores how people think about money, make financial decisions, and why emotions often influence those choices more than logic. The book explains that wealth is not just about income or investment skill, but about behavior—how you save, spend, and react to risks. Through engaging stories and timeless lessons, Housel emphasizes the importance of patience, humility, and long-term thinking. He shows that financial success comes from consistency and understanding one’s personal relationship with money rather than following trends. The book teaches that true wealth is freedom, not luxury or status.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>Deep Work</h2>
+            <h5>Cal Newport</h5>
+            <p>Deep Work by Cal Newport explores the power of focused, distraction-free concentration in an age of constant digital interruptions. Newport explains that deep work—intense, undisturbed focus on cognitively demanding tasks—produces better results, improves skills, and helps achieve career excellence. He contrasts it with shallow work, which is easy but unproductive. Through real-life examples of successful people, Newport shows how deliberate focus leads to innovation and mastery. The book offers practical strategies to build deep work habits, such as scheduling focused time, minimizing distractions, and embracing boredom. It inspires readers to work smarter, not longer, and achieve meaningful success.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>The 7 Habits of Highly Effective People</h2>
+            <h5>Stephen R. Covey</h5>
+            <p>The 7 Habits of Highly Effective People by Stephen R. Covey is a classic self-development book that teaches timeless principles for personal and professional success. Covey emphasizes character, integrity, and proactive behavior as the foundation of effectiveness. The book is structured around seven habits—such as being proactive, beginning with the end and prioritizing what matters most. It also highlights the importance of mutual benefit, empathy, and continuous improvement. C strengthen relationships, and achieve balance in life. It’s a guide to building habits that create lasting success and personal growth.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+        
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
